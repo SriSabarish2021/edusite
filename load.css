@@ -1,0 +1,44 @@
+
+#loading-icon{
+    height:100vh;
+    width: 100%;
+    background-color: rgb(219, 160, 160);
+    display: flex;
+    justify-content:center ;
+
+}
+#loading-icon p{
+    width: 80px;
+    height: 80px;
+    border-top: 4px solid rgb(0, 0, 0);
+    border-bottom:4px solid rgb(0, 0, 0);
+    position: relative;
+    top: 50%;
+    border-radius: 30%;
+    background-color: rgb(255, 255, 255);
+    animation-name: rotate;
+    animation-duration: 3s;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+}
+@keyframes rotate{
+    0%{
+        transform: rotate(0deg);
+    }
+    20%{
+        transform: rotate(180deg);
+    }
+    60%{
+        transform: rotate(30deg);
+    }
+    20%{
+        transform: rotate(360deg);
+    }
+    100%{
+        transform: rotate(0deg);
+    }
+
+}
+
